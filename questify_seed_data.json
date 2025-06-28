@@ -1,0 +1,313 @@
+{
+  "User": [
+    {
+      "UserID": 1,
+      "Username": "nehemiah",
+      "Email": "nehemiah@example.com",
+      "PasswordHash": "hash123",
+      "Level": 5,
+      "XP": 330,
+      "SettingsID": 1
+    },
+    {
+      "UserID": 2,
+      "Username": "kira",
+      "Email": "kira@example.com",
+      "PasswordHash": "hash456",
+      "Level": 3,
+      "XP": 120,
+      "SettingsID": 2
+    }
+  ],
+  "Settings": [
+    {
+      "SettingsID": 1,
+      "UserID": 1,
+      "Preferences": "dark_mode=true;notifications=on"
+    },
+    {
+      "SettingsID": 2,
+      "UserID": 2,
+      "Preferences": "dark_mode=false;notifications=on"
+    }
+  ],
+  "Guild": [
+    {
+      "GuildID": 1,
+      "OwnerUserID": 1,
+      "Name": "ThesisForge",
+      "CreatedAt": "2025-06-20",
+      "TotalGuildXP": 0
+    },
+    {
+      "GuildID": 2,
+      "OwnerUserID": 1,
+      "Name": "FrameLab",
+      "CreatedAt": "2025-06-20",
+      "TotalGuildXP": 0
+    },
+    {
+      "GuildID": 3,
+      "OwnerUserID": 2,
+      "Name": "LaunchPad",
+      "CreatedAt": "2025-06-21",
+      "TotalGuildXP": 0
+    },
+    {
+      "GuildID": 4,
+      "OwnerUserID": 2,
+      "Name": "Backstage HQ",
+      "CreatedAt": "2025-06-22",
+      "TotalGuildXP": 0
+    },
+    {
+      "GuildID": 5,
+      "OwnerUserID": 1,
+      "Name": "PromoPort",
+      "CreatedAt": "2025-06-23",
+      "TotalGuildXP": 0
+    },
+    {
+      "GuildID": 6,
+      "OwnerUserID": 2,
+      "Name": "DevDock",
+      "CreatedAt": "2025-06-23",
+      "TotalGuildXP": 0
+    }
+  ],
+  "GuildMember": [
+    {
+      "GuildID": 1,
+      "UserID": 1,
+      "Role": "Owner",
+      "JoinedAt": "2025-06-20"
+    },
+    {
+      "GuildID": 2,
+      "UserID": 2,
+      "Role": "Owner",
+      "JoinedAt": "2025-06-21"
+    },
+    {
+      "GuildID": 1,
+      "UserID": 2,
+      "Role": "Member",
+      "JoinedAt": "2025-06-22"
+    }
+  ],
+  "Quest": [
+    {
+      "QuestID": 1,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Finalize Capstone Proposal",
+      "Description": "Complete and submit your final capstone document with peer-reviewed sources.",
+      "DoDate": "2025-06-26",
+      "DueDate": "2025-06-28",
+      "Type": "Main",
+      "GuildID": 1,
+      "XPValue": 100,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 2,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Edit Event Teaser Video",
+      "Description": "Produce the final cut for the teaser and sync it with background music.",
+      "DoDate": "2025-06-27",
+      "DueDate": "2025-06-28",
+      "Type": "Main",
+      "GuildID": 2,
+      "XPValue": 100,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 3,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Deploy Beta Version of App",
+      "Description": "Push the latest build to the test server and notify QA testers.",
+      "DoDate": "2025-06-28",
+      "DueDate": "2025-06-29",
+      "Type": "Main",
+      "GuildID": 3,
+      "XPValue": 100,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 4,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Write Talk Script for Webinar",
+      "Description": "Prepare a 10-minute script for your segment in the upcoming webinar.",
+      "DoDate": "2025-06-26",
+      "DueDate": "2025-06-27",
+      "Type": "Main",
+      "GuildID": 1,
+      "XPValue": 100,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 5,
+      "CreatorUserID": 2,
+      "AssignedToUserID": 2,
+      "Title": "Coordinate Food Orders for Team Meeting",
+      "Description": "Collect preferences and place food delivery ahead of the sync.",
+      "DoDate": "2025-06-25",
+      "DueDate": "2025-06-26",
+      "Type": "Side",
+      "GuildID": 4,
+      "XPValue": 50,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 6,
+      "CreatorUserID": 2,
+      "AssignedToUserID": 2,
+      "Title": "Update Slide Deck for Client Pitch",
+      "Description": "Refresh visual design and revise the case study section.",
+      "DoDate": "2025-06-27",
+      "DueDate": "2025-06-28",
+      "Type": "Side",
+      "GuildID": 5,
+      "XPValue": 50,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 7,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Post Schedule on Team Dashboard",
+      "Description": "Add updated weekly goals and tasks to the workspace.",
+      "DoDate": "2025-06-24",
+      "DueDate": "2025-06-25",
+      "Type": "Side",
+      "GuildID": 6,
+      "XPValue": 50,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 8,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Confirm Speaker Attendance",
+      "Description": "Follow up with all event speakers to confirm availability.",
+      "DoDate": "2025-06-26",
+      "DueDate": "2025-06-27",
+      "Type": "Side",
+      "GuildID": 4,
+      "XPValue": 50,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 9,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Create Social Media Countdown",
+      "Description": "Schedule 3-day countdown graphics on all event pages.",
+      "DoDate": "2025-06-25",
+      "DueDate": "2025-06-26",
+      "Type": "Side",
+      "GuildID": 5,
+      "XPValue": 50,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 10,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Mock Interview with Teammate",
+      "Description": "Conduct a 30-minute mock session for internship prep.",
+      "DoDate": "2025-06-26",
+      "DueDate": "2025-06-27",
+      "Type": "Side",
+      "GuildID": 1,
+      "XPValue": 50,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 11,
+      "CreatorUserID": 2,
+      "AssignedToUserID": 2,
+      "Title": "Upload Documentation to Repository",
+      "Description": "Organize project files and upload the latest documentation.",
+      "DoDate": "2025-06-28",
+      "DueDate": "2025-06-29",
+      "Type": "Side",
+      "GuildID": 6,
+      "XPValue": 50,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 12,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Set Up Event QR Check-In Form",
+      "Description": "Build and test a Google Form for day-of onsite check-ins.",
+      "DoDate": "2025-06-25",
+      "DueDate": "2025-06-26",
+      "Type": "Side",
+      "GuildID": 4,
+      "XPValue": 50,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 13,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Print Attendance Sheet",
+      "Description": "Print two copies of the updated sheet for manual tracking.",
+      "DoDate": "2025-06-24",
+      "DueDate": "2025-06-25",
+      "Type": "Mini",
+      "GuildID": null,
+      "XPValue": 15,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 14,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Clear Desktop Icons",
+      "Description": "Organize and clean your desktop before the presentation.",
+      "DoDate": "2025-06-24",
+      "DueDate": "2025-06-25",
+      "Type": "Mini",
+      "GuildID": null,
+      "XPValue": 15,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 15,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 1,
+      "Title": "Charge Camera Batteries",
+      "Description": "Make sure all camera batteries are fully charged for the event.",
+      "DoDate": "2025-06-25",
+      "DueDate": "2025-06-26",
+      "Type": "Mini",
+      "GuildID": 2,
+      "XPValue": 15,
+      "Status": "Pending"
+    }
+  ],
+  "Notification": [
+    {
+      "NotificationID": 1,
+      "UserID": 1,
+      "Message": "You gained 100 XP!",
+      "Type": "XP Gain",
+      "CreatedAt": "2025-06-26",
+      "IsRead": false
+    },
+    {
+      "NotificationID": 2,
+      "UserID": 2,
+      "Message": "New quest assigned to you.",
+      "Type": "Quest Assigned",
+      "CreatedAt": "2025-06-26",
+      "IsRead": true
+    }
+  ]
+}
