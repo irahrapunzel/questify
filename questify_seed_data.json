@@ -1,0 +1,116 @@
+{
+  "User": [
+    {
+      "UserID": 1,
+      "Username": "nehemiah",
+      "Email": "nehemiah@example.com",
+      "PasswordHash": "hash123",
+      "Level": 5,
+      "XP": 330,
+      "SettingsID": 1
+    },
+    {
+      "UserID": 2,
+      "Username": "kira",
+      "Email": "kira@example.com",
+      "PasswordHash": "hash456",
+      "Level": 3,
+      "XP": 120,
+      "SettingsID": 2
+    }
+  ],
+  "Settings": [
+    {
+      "SettingsID": 1,
+      "UserID": 1,
+      "Preferences": "dark_mode=true;notifications=on"
+    },
+    {
+      "SettingsID": 2,
+      "UserID": 2,
+      "Preferences": "dark_mode=false;notifications=on"
+    }
+  ],
+  "Guild": [
+    {
+      "GuildID": 1,
+      "OwnerUserID": 1,
+      "Name": "ThesisForge",
+      "CreatedAt": "2025-06-20",
+      "TotalGuildXP": 500
+    },
+    {
+      "GuildID": 2,
+      "OwnerUserID": 2,
+      "Name": "FrameLab",
+      "CreatedAt": "2025-06-21",
+      "TotalGuildXP": 300
+    }
+  ],
+  "GuildMember": [
+    {
+      "GuildID": 1,
+      "UserID": 1,
+      "Role": "Owner",
+      "JoinedAt": "2025-06-20"
+    },
+    {
+      "GuildID": 2,
+      "UserID": 2,
+      "Role": "Owner",
+      "JoinedAt": "2025-06-21"
+    },
+    {
+      "GuildID": 1,
+      "UserID": 2,
+      "Role": "Member",
+      "JoinedAt": "2025-06-22"
+    }
+  ],
+  "Quest": [
+    {
+      "QuestID": 1,
+      "CreatorUserID": 1,
+      "AssignedToUserID": 2,
+      "Title": "Finalize Proposal",
+      "Description": "Write and polish the final paper",
+      "DoDate": "2025-06-26",
+      "DueDate": "2025-06-28",
+      "Type": "Main",
+      "GuildID": 1,
+      "XPValue": 100,
+      "Status": "Pending"
+    },
+    {
+      "QuestID": 2,
+      "CreatorUserID": 2,
+      "AssignedToUserID": 2,
+      "Title": "Edit Teaser",
+      "Description": "Final cut and export",
+      "DoDate": "2025-06-27",
+      "DueDate": "2025-06-28",
+      "Type": "Main",
+      "GuildID": 2,
+      "XPValue": 100,
+      "Status": "Pending"
+    }
+  ],
+  "Notification": [
+    {
+      "NotificationID": 1,
+      "UserID": 1,
+      "Message": "You gained 100 XP!",
+      "Type": "XP Gain",
+      "CreatedAt": "2025-06-26",
+      "IsRead": false
+    },
+    {
+      "NotificationID": 2,
+      "UserID": 2,
+      "Message": "New quest assigned to you.",
+      "Type": "Quest Assigned",
+      "CreatedAt": "2025-06-26",
+      "IsRead": true
+    }
+  ]
+}

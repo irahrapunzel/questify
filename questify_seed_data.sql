@@ -1,0 +1,13 @@
+INSERT INTO User (UserID, Username, Email, PasswordHash, Level, XP, SettingsID) VALUES (1, 'nehemiah', 'nehemiah@example.com', 'hash123', 5, 330, 1);
+INSERT INTO User (UserID, Username, Email, PasswordHash, Level, XP, SettingsID) VALUES (2, 'kira', 'kira@example.com', 'hash456', 3, 120, 2);
+INSERT INTO Settings (SettingsID, UserID, Preferences) VALUES (1, 1, 'dark_mode=true;notifications=on');
+INSERT INTO Settings (SettingsID, UserID, Preferences) VALUES (2, 2, 'dark_mode=false;notifications=on');
+INSERT INTO Guild (GuildID, OwnerUserID, Name, CreatedAt, TotalGuildXP) VALUES (1, 1, 'ThesisForge', '2025-06-20', 500);
+INSERT INTO Guild (GuildID, OwnerUserID, Name, CreatedAt, TotalGuildXP) VALUES (2, 2, 'FrameLab', '2025-06-21', 300);
+INSERT INTO GuildMember (GuildID, UserID, Role, JoinedAt) VALUES (1, 1, 'Owner', '2025-06-20');
+INSERT INTO GuildMember (GuildID, UserID, Role, JoinedAt) VALUES (2, 2, 'Owner', '2025-06-21');
+INSERT INTO GuildMember (GuildID, UserID, Role, JoinedAt) VALUES (1, 2, 'Member', '2025-06-22');
+INSERT INTO Quest (QuestID, CreatorUserID, AssignedToUserID, Title, Description, DoDate, DueDate, Type, GuildID, XPValue, Status) VALUES (1, 1, 2, 'Finalize Proposal', 'Write and polish the final paper', '2025-06-26', '2025-06-28', 'Main', 1, 100, 'Pending');
+INSERT INTO Quest (QuestID, CreatorUserID, AssignedToUserID, Title, Description, DoDate, DueDate, Type, GuildID, XPValue, Status) VALUES (2, 2, 2, 'Edit Teaser', 'Final cut and export', '2025-06-27', '2025-06-28', 'Main', 2, 100, 'Pending');
+INSERT INTO Notification (NotificationID, UserID, Message, Type, CreatedAt, IsRead) VALUES (1, 1, 'You gained 100 XP!', 'XP Gain', '2025-06-26', False);
+INSERT INTO Notification (NotificationID, UserID, Message, Type, CreatedAt, IsRead) VALUES (2, 2, 'New quest assigned to you.', 'Quest Assigned', '2025-06-26', True);
